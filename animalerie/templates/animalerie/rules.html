@@ -1,0 +1,23 @@
+{% extends 'animalerie/base.html' %}
+{% load static %}
+{% block ruleblock %}
+
+<div class="rules">
+  <h1>Bienvenue dans mon centre Pokémon ! </h1>
+  <p> Occupe toi de ces mignons personnages en répondant à leur besoin.. </p>
+  <p> Un pokémon <span class="ruleshigh">affamé</span> a besoin de <span class="ruleshigh">manger</span> ! </p>
+  <p> Un pokémon <span class="ruleshigh">repus</span> a besoin d'<span class="ruleshigh">exercice</span> o/ </p>
+  <p> Un pokémon <span class="ruleshigh">fatigué</span> à besoin de <span class="ruleshigh">dormir</span> é.è </p>
+  <p> La case <span class="ruleshigh">toilette</span> est ensuite recommandée au <span class="ruleshigh">réveil</span> uwu </p>
+</div>
+<div class="btn-bg Pokemon">
+    <h1> Pour retourner au menu, c'est ici ! </h1>
+    <div class="btn-group">
+        <div class="btn ball">
+            <button>
+                <div class="pokemon-ball"></div><a href="{% url 'animal_list' %}">MENU<span data-letters="GO!"></span><span data-letters="GO!"></span></a>
+            </button>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'animalerie/base.html' %}
+{% load static %}
+{% block ruleblock %}
+<div class="{{animal.id_animal}}">
+<h1 style="text-align: center"> {{animal.id_animal}} a bien été déplacé vers {{nouveau_lieu.id_equip}} ! </h1>
+</div>
+<div class="btn-bg Pokemon">
+    <h1> Pour retourner au menu, c'est ici ! </h1>
+    <div class="btn-group">
+        <div class="btn ball">
+            <button>
+                <div class="pokemon-ball"></div><a href="{% url 'animal_list' %}">MENU<span data-letters="GO!"></span><span data-letters="GO!"></span></a>
+            </button>
+        </div>
+    </div>
+</div>
+{% endblock %}
